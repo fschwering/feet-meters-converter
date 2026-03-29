@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnitFlow | Precision Feet-Meters Converter</title>
+    <meta name="description" content="A premium, real-time converter for feet and meters with a modern interface.">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blob blob-1"></div>
+    <div class="background-blob blob-2"></div>
+    
+    <main class="app-container">
+        <header>
+            <h1 class="logo">Unit<span>Flow</span></h1>
+            <p class="subtitle">Precision Conversion System</p>
+        </header>
+
+        <section class="converter-card" id="converterCard">
+            <div class="mode-selector">
+                <button id="modeToggle" class="mode-btn">
+                    <span id="labelFrom">Feet</span>
+                    <svg class="swap-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M16 17.01V10h-2v7.01h-3L15 21l4-3.99h-3zM9 3L5 6.99h3V14h2V6.99h3L9 3z"/>
+                    </svg>
+                    <span id="labelTo">Meters</span>
+                </button>
+            </div>
+
+            <div class="input-group">
+                <label for="inputValue" id="inputLabel">Enter Feet</label>
+                <div class="input-wrapper">
+                    <input type="number" id="inputValue" placeholder="0.00" step="any">
+                    <span class="unit-suffix" id="inputUnit">ft</span>
+                </div>
+            </div>
+
+            <div class="result-area">
+                <label>Result</label>
+                <div class="result-display">
+                    <span id="resultValue">0.0000</span>
+                    <span class="unit-suffix" id="resultUnit">m</span>
+                </div>
+            </div>
+
+            <button id="copyBtn" class="primary-btn">Copy Result</button>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 UnitFlow Precision Systems</p>
+        </footer>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
